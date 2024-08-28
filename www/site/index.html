@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Webserv Project</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #9;
+			color: #333;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+		header, footer {
+			text-align: right;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+		}
+		header em, footer em {
+			font-size: 0.9em;
+		}
+		main {
+			text-align: center;
+			padding: 20px;
+			flex: 1;
+		}
+		h1 {
+			color: #333;
+			font-size: 2.5em;
+			margin-top: 0;
+		}
+		h4 {
+			color: #666;
+			font-size: 1.2em;
+		}
+		img {
+			margin-top: 20px;
+		}
+		.links {
+			margin-top: 20px;
+		}
+		.links p {
+			margin: 10px 0;
+			font-size: 1.1em;
+		}
+		.links a {
+			color: #007BFF;
+			text-decoration: none;
+		}
+		.links a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<em>42 Paris - Created by arincon and ddania-c 2024</em>
+	</header>
+	<main>
+		<img src="pictures/logo_42.jpeg" alt="42_logo" width="200" height="150" />
+		<h1>Webserv Project</h1>
+		<h4>Welcome to the Webserv testing site. Explore our functionalities below.</h4>
+		<div class="links">
+			<p><a href="/pages/page1.html">Site Sample</a> - GET</p>
+			<p><a href="/pictures/picture1.jpg">Picture Sample</a> - Get</p>
+			<p><a href="/forms/add_contact_php_post.html">Add a New Contact with PHP</a> - Form Post</p>
+			<p><a href="/forms/add_contact_php_get.html">Add a New Contact with PHP</a> - Form Get</p>
+			<p><a href="/forms/upload_picture.html">Upload a Picture with PHP</a> - Form Post</p>
+			<p><a href="/forms/upload_picture_py.html">Upload a Picture with Python</a> - Form Post</p>
+			<p><a href="/forms/contacts.html">Manage Contacts</a> - Delete</p>
+			<p><a href="/autoindex">Autoindex</a> - Autoindex on</p>
+			<p><a href="/error_pages">Its a Directory</a> - Directory</p>
+			<p><a href="/hello.html">Not Found</a> - Error 404</p>
+			<p><a href="/default_error_page/hello.html">Not Found</a> - Error 404 (Default)</p>
+			<p><a href="/method_not_allowed">Method Not Allowed</a> - Error 405</p>
+			<p><a href="/thisuriwillbetoolargetobeacceptedbythisserverthisuriwillbetoolargetobeacceptedbythisserverthisuriwillbetoolargetobeacceptedbythisserverthisuriwillbetoolargetobeacceptedbythisserver">Uri too large</a> - Error 414</p>
+			<p><a href="/pictures/picture_no_permissions.jpg">Picture with no permissions</a> - Error 403</p>
+			<p><a href="/upload/song.mp4">Not supported media type</a> - Error 415</p>
+		</div>
+	</main>
+</body>
+</html>

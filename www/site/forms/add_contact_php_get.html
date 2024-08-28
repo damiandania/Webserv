@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Webserv Project</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #9;
+			color: #333;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+		header, footer {
+			text-align: right;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+		}
+		header em, footer em {
+			font-size: 0.9em;
+		}
+		main {
+			text-align: center;
+			padding: 20px;
+			flex: 1;
+		}
+		h1 {
+			color: #333;
+			font-size: 2.5em;
+			margin-top: 0;
+		}
+		h4 {
+			color: #666;
+			font-size: 1.2em;
+		}
+		img {
+			margin-top: 20px;
+		}
+		.links {
+			margin-top: 20px;
+		}
+		.links p {
+			margin: 10px 0;
+			font-size: 1.1em;
+		}
+		.links a {
+			color: #007BFF;
+			text-decoration: none;
+		}
+		.links a:hover {
+			text-decoration: underline;
+		}
+		.centered-form {
+			text-align: center;
+		}
+		.centered-form form {
+			display: inline-block;
+			text-align: left;
+		}
+		.centered-form label, .centered-form input {
+			display: block;
+			margin: 10px 0;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<em>42 Paris - Created by arincon and ddania-c 2024</em>
+	</header>
+	<main>
+		<a href="/index.html">
+		<img src="https://logowik.com/content/uploads/images/423918.logowik.com.webp" alt="42_logo" width="200" height="150" />
+		</a>
+		<h1>Webserv Project</h1>
+		<h4>Welcome to the Webserv testing site. Explore our functionalities below.</h4>
+		<br>
+		<h3>Add a new contact - PHP + GET</h3>
+		<div class="centered-form">
+			<form action="submit.php" method="GET">
+				<label for="name">Name:</label>
+				<input id="name" name="name" type="text" required />
+				<label for="lastname">Lastname:</label>
+				<input id="lastname" name="lastname" type="text" required />
+				<label for="email">Email:</label>
+				<input id="email" name="email" type="email" required />
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+	</main>
+</body>
+</html>
