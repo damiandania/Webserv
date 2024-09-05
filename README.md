@@ -45,7 +45,7 @@ Replace <config_file> with the path to your configuration file.
 Configuration
 Configuration files are located in the config/ directory. You can specify different settings such as server ports, root directories, and error pages.
 
-**Example Configuration**
+5. **Example Configuration**
 	```bash
 	server {
 		listen 80;
@@ -63,4 +63,3 @@ Configuration files are located in the config/ directory. You can specify differ
 
 		error_page 404 /404.html;
 	}
-	```
