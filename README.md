@@ -3,7 +3,7 @@
 	alt="Project pic" width="150" height="150"/>
 </p>
 
-# Webserv
+# Webserv 📡
 
 Webserv is a lightweight web server implemented in C++ and C++98. It is designed to handle HTTP requests and serve static files, as well as execute CGI scripts. This project aims to provide a simple yet functional web server with support for various configurations.
 
