@@ -33,9 +33,34 @@ Webserv is a lightweight web server implemented in C++ and C++98. It is designed
 	cd Webserv
 
 3. **To build the project, run the following command:**
-```bash
+	```bash
 	make
 
-4. **To build the project, run the following command:**
-```bash
+4. **Launch the program:**
+	```bash
 	./Webserv <config_file>
+
+Replace <config_file> with the path to your configuration file.
+
+Configuration
+Configuration files are located in the config/ directory. You can specify different settings such as server ports, root directories, and error pages.
+
+**Example Configuration**
+	```bash
+	server {
+		listen 80;
+		server_name localhost;
+
+		location / {
+			root /var/www/html;
+			index index.html;
+		}
+
+		location /cgi-bin/ {
+			root /var/www/cgi-bin;
+			cgi_pass on;
+		}
+
+		error_page 404 /404.html;
+	}
+	```
